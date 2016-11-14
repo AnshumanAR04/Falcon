@@ -28,17 +28,17 @@
   <!--HEADER CLASS-->
   <div id="header">
     <ul class="cb-slideshow">
-      <li><span>Image 01</span><div><h3>University Quiz Portal</h3></div></li>
-      <li><span>Image 02</span><div><h3>University Quiz Portal</h3></div></li>
-      <li><span>Image 03</span><div><h3>University Quiz Portal</h3></div></li>
-      <li><span>Image 04</span><div><h3>University Quiz Portal</h3></div></li>
-      <li><span>Image 05</span><div><h3>University Quiz Portal</h3></div></li>
+      <li><span>Image 01</span></li>
+      <li><span>Image 02</span></li>
+      <li><span>Image 03</span></li>
+      <li><span>Image 04</span></li>
+      <li><span>Image 05</span></li>
     </ul>
   </div>
 
   <!-- BODY CLASSES-->
-  <center>
   <div id="body">
+    <center><div class="header-text">University Quiz Portal</div></center>
     <div id="calendar">
       <div class="up-events">
         <span>Upcoming Quizzes</span>
@@ -50,66 +50,70 @@
         <li class="collection-item">Quiz 4</li>
       </ul>
     </div>
+
     <div id="login">
-      <center>
-        <div class="login-form">
+      <div class="up-events">
+        <span>Login</span>
+      </div>
+      <ul class="collection">
+        <li class="collection-item">
           <form class="col s12">
             <div class="input-field col s12">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">Username</label>
+              <input id="first_name" type="text" class="validate" placeholder="Username">
+              <!--label for="first_name">Username</label-->
             </div>
             <div class="input-field col s12">
-              <input id="message" type="text" class="validate">
-              <label for="message" data-error="wrong" data-success="right">Password</label>
+              <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+              <input id="message" type="password" class="validate" placeholder = "Password" >
+              <!--label for="message" data-error="wrong" data-success="right">Password</label-->
+              <!--label for="message">Password</label-->
             </div>
           </form>
-        </div>
-      </center>
+        </li>
+      </ul>
     </div>
-  </div>
-</center>
 
-  <!-- FOOTER CLASS -->
-  <div id="footer">
-    <footer class="page-footer grey darken-4">
-      <h4 style="font-family:Walter Turncoat;" class="white-text"><center>Crafted with &hearts; and care</center></h4>
-      <h6 class="white-text"><center>Also used Java, JSP, HTML, CSS and some secret ingredients !!</center></h6><br>
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <p class="grey-text text-lighten-4">This quiz portal is developed by <a href="https://www.facebook.com/shubham.shukla2512">Shubham Shukla</a> and <a href="https://www.facebook.com/varun.singh19">Varun Singh</a> under the esteemed guidance of Prof. Shishir Kumar, Dr. Dinesh Kumar Verma and the Department of Computer Science &amp; Engineering.<br><br>
-              If you spot a bug of any kind, write us at<br>
-              <i class="tiny material-icons" >mail</i> juet.csi@gmail.com</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-             <div class="row">
-              <h5 class="white-text">&nbsp; Drop us a message</h5> <!-- Add Feedback class-->
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">Name</label>
+    <!-- FOOTER CLASS -->
+    <div id="footer">
+      <footer class="page-footer grey darken-4">
+        <h4 style="font-family:Walter Turncoat;" class="white-text"><center>Crafted with &hearts; and care</center></h4>
+        <h6 class="white-text"><center>Also used Java, JSP, HTML, CSS and some secret ingredients !!</center></h6><br>
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <p class="grey-text text-lighten-4">This quiz portal is developed by <a href="https://www.facebook.com/shubham.shukla2512">Shubham Shukla</a> and <a href="https://www.facebook.com/varun.singh19">Varun Singh</a> under the esteemed guidance of Prof. Shishir Kumar, Dr. Dinesh Kumar Verma and the Department of Computer Science &amp; Engineering.<br><br>
+                If you spot a bug of any kind, write us at<br>
+                <i class="tiny material-icons" >mail</i> juet.csi@gmail.com</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+               <div class="row">
+                <h5 class="white-text">&nbsp; Drop us a message</h5> <!-- Add Feedback class-->
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">Name</label>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="message" type="text" class="validate">
-                    <label for="message" data-error="wrong" data-success="right">Message</label>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="message" type="text" class="validate">
+                      <label for="message" data-error="wrong" data-success="right">Message</label>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-copyright blue darken-4">
-        <div class="container">
-          <a class="grey-text text-lighten-4" href="http://www.juet.ac.in">&copy; 2016 Jaypee University of Engineering &amp; Technology, Guna</a>
-          <a class="grey-text text-lighten-4 right" href="#!">Maintained by CSI JUET</a><!-- Insert CSI JUET Website here-->
+        <div class="footer-copyright blue darken-4">
+          <div class="container">
+            <a class="grey-text text-lighten-4" href="http://www.juet.ac.in">&copy; 2016 Jaypee University of Engineering &amp; Technology, Guna</a>
+            <a class="grey-text text-lighten-4 right" href="#!">Maintained by CSI JUET</a><!-- Insert CSI JUET Website here-->
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+      </footer>
+    </div>
+  </body>
+  </html>
 
