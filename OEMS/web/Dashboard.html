@@ -9,110 +9,103 @@
   <link type="text/css" rel="stylesheet" href="css/main.css"/>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!-- Favicon -->
-  <!--link rel="icon" type="image/png" href="images/favicon.png"-->
-  <style>
-  header, main, footer {
-    padding-left: 20%;
-  }
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  main {
-    flex: 1 0 auto;
-  }
-  </style>
+  <link rel="icon" type="image/png" href="images/juetlogo.png"-->
 </head>
 
 <body style="background-image: url(images/dash_bg.png); background-repeat: no-repeat;">
-  <div id="toolbar" style="padding-top: 2%; margin-left:auto; margin-right:1%;">
-    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large waves-effect waves-light blue darken-4"><i class="material-icons">menu</i></a>
-  </div>
-  <ul id="slide-out" class="side-nav fixed">
-    <li>
-      <div class="userView" style="background-image: url(images/dash_nav_top.jpg); background-size: cover; background-position: center center;" >
-        <a><img class="circle responsive-img" style="height:60px;width:60px;" src="images/avatar.png"></a>
-        <a><span class="white-text name">Varun Singh</span></a>
-        <a href="mailto:abc.xyz.com?subject=Quiz Portal"><span class="white-text email">abc@xyz.com</span></a>
-      </div>
-    </li>
-    <!-- Modal Trigger -->
-    <!--li><a data-toggle="tab" href="#tab2"><i class="material-icons">perm_identity</i>Profile Info </a></li-->
-    <li><a data-toggle="tab" href="#"><i class="material-icons">mode_edit</i>Change Password</a></li>
-    <li><a data-toggle="tab" href="#"><i class="material-icons">view_list</i>Previous Scores</a></li>
-    <li><a class="waves-effect modal-trigger" data-toggle="modal" href="#modal-aboutus"><i class="material-icons">contacts</i>About Us</a></li>
-    <li><div class="divider"></div></li>
-    <!--<li><a class="subheader">Subheader</a></li>-->
-    <li><a class="waves-effect" href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
-  </ul>
-  <div id="modal-aboutus" class="modal grey darken-4">
-    <div class="modal-content">
-      <h4 style="font-family:Walter Turncoat;" class="white-text"><center>Crafted with &hearts; and care</center></h4>
-      <h6 class="white-text"><center>Also used Java, JSP, HTML, CSS and some secret ingredients !!</center></h6><br>
-      <div class="col l6 s12">
-        <p class="grey-text text-lighten-4">This quiz portal is developed by <a href="https://www.facebook.com/shubham.shukla2512">Shubham Shukla</a> and <a href="https://www.facebook.com/varun.singh19">Varun Singh</a> under the esteemed guidance of Prof. Shishir Kumar, Dr. Dinesh Kumar Verma and the Department of Computer Science &amp; Engineering.<br><b>
-          If you spot a bug of any kind, write us at<br>
-          <i class="tiny material-icons" >mail</i> juet.csi@gmail.com
-        </p>
+  <main>
+    <div id="toolbar" style="padding-top: 1%; min-width: 100%; float:right;">
+      <div style="float:right; margin-right: 2%">
+        <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large waves-effect waves-light blue darken-4" ><i class="material-icons">menu</i></a>
+        <a href="#" class="btn-floating btn-large blue darken-4 waves-effect waves-light"><i class="material-icons">power_settings_new</i></a>
       </div>
     </div>
+    <!-- add class="side-nav fixed" if you want to bring the sidenav on page load"-->
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <div class="userView" style="background-image: url(images/dash_nav_top.jpg); background-size: cover; background-position: center center;" >
+          <a><img class="circle responsive-img" style="height:60px;width:60px;" src="images/avatar.png"></a>
+          <a><span class="white-text name">Varun Singh</span></a>
+          <a href="mailto:abc.xyz.com?subject=Quiz Portal"><span class="white-text email">abc@xyz.com</span></a>
+        </div>
+      </li>
+      <!-- Modal Trigger -->
+      <!--li><a data-toggle="tab" href="#tab2"><i class="material-icons">perm_identity</i>Profile Info </a></li-->
+      <li><a data-toggle="tab" href="#"><i class="material-icons">mode_edit</i>Change Password</a></li>
+      <li><a data-toggle="tab" href="#"><i class="material-icons">view_list</i>Previous Scores</a></li>
+      <li><a class="waves-effect modal-trigger" data-toggle="modal" href="#modal-aboutus"><i class="material-icons">contacts</i>About Us</a></li>
+      <li><div class="divider"></div></li>
+      <!--<li><a class="subheader">Subheader</a></li>-->
+      <li><a class="waves-effect" href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
+    </ul>
+    <div id="modal-aboutus" class="modal grey darken-4">
+      <div class="modal-content">
+        <h4 style="font-family:Walter Turncoat;" class="white-text"><center>Crafted with &hearts; and care</center></h4>
+        <h6 class="white-text"><center>Also used Java, JSP, HTML, CSS and some secret ingredients !!</center></h6><br>
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4">This quiz portal is developed by <a href="https://www.facebook.com/shubham.shukla2512">Shubham Shukla</a> and <a href="https://www.facebook.com/varun.singh19">Varun Singh</a> under the esteemed guidance of Prof. Shishir Kumar, Dr. Dinesh Kumar Verma and the Department of Computer Science &amp; Engineering.<br><b>
+            If you spot a bug of any kind, write us at<br>
+            <i class="tiny material-icons" >mail</i> juet.csi@gmail.com
+          </p>
+        </div>
+      </div>
     <!--div class="modal-footer grey darken-4">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat white-text">Okay</a>
     </div-->
   </div>
+  <center><h3>Welcome ~Username~<h3></center>
+  <center><div id="event-cal" style="max-width: 50%;">
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">description</i>First</div>
+        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">description</i>Second</div>
+        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">description</i>Third</div>
+        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      </li>
+    </ul>
+  </div></center>
+</main>
 
-  <main>
-    <div class="container">
-      <div class="tab-content">
-        <div id="tab1" class="tab-pane fade in active">
-          <h3>Tab 1</h3>
-          <ul class="collapsible" data-collapsible="accordion">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="col l6 s12">
+      <h5 class="white-text">Announcements</h5>
+      <p class="white-text text-lighten-4">
+        <ul>
+          <li class="white-text">This is announcement text 1.</li>
+          <li class="white-text">This is announcement text 2.</l2>
           </ul>
-
-        </div>
-        <div id="tab2" class="tab-pane fade">
-          <h3>Tab 2</h3>
-          <p></p>
-        </div>
-        <div id="tab3" class="tab-pane fade">
-          <h3>Tab 3</h3>
-          <p></p>
-        </div>
-        <div id="tab4" class="tab-pane fade">
-          <h3>Tab 4</h3>
-          <p></p>
-        </div>
+        </p>
       </div>
     </div>
-  </main>
-
-
-
-
-  <footer class="page-footer">
-    <div class="footer-copyright">
+    <div class="footer-copyright blue darken-4">
       <div class="container">
-        Announcements
+        <a class="grey-text text-lighten-4" href="http://www.juet.ac.in">&copy; 2016 Jaypee University of Engineering &amp; Technology, Guna</a>
+        <a class="grey-text text-lighten-4 right" href="#!">Maintained by CSI JUET</a><!-- Insert CSI JUET Website here-->
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="js/materialize.js"></script>
+
+
+  <style type="text/css">
+  body {
+       display: flex;
+       min-height: 100vh;
+       flex-direction: column;
+   }
+   main {
+       flex: 1 0 auto;
+   }
+  </style>
   <script>
   $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
@@ -121,7 +114,6 @@
   </script>
 
   <script>
-
   // Initialize collapse button
   $(".button-collapse").sideNav({});
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
